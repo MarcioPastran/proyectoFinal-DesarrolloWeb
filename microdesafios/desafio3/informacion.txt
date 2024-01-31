@@ -1,0 +1,4 @@
+crea una seccción de contendo central en su pagina web
+(secction o main)rodeada por otros elementos como un 
+encabezado (h1) y un (footer)y un menu de navegacion 
+(header o nav)
