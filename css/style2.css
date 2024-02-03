@@ -18,10 +18,10 @@
 }
 
 /*encavezado de introduccionaa la paguina*/
-.header{
+.header1{
     height: 100vh;
     position: relative;
-    background-image: url(../img/blog1.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/blog1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@
 }
 .logo{
     width: 100%;
-    border:2px solid wheat;
+    border:2px solid #ffffff;
 }
 /*menu responcibo*/
 #menu-btn{
@@ -169,7 +169,7 @@
     position: relative;
     text-align: center;
     color: white;
-    background-image: url(../img/bg2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/bg2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,7 +201,7 @@
     text-align: center;
     margin-bottom: 50px;
 }
-
+/*main informacion adicional*/
 .info-galeria{
     display: grid;
     grid-template-rows:550px;
@@ -213,14 +213,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: rgba( 0, 0, 0, 0.7), rgba( 0, 0, 0, 0.7);
 }
 .info-3{
     background-image: url(../img/coffee-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: rgba( 0, 0, 0, 0.7), rgba( 0, 0, 0, 0.7);
 }
 .info-4,
 .info-1{
@@ -239,7 +237,7 @@
 .info-1 p{
     font-size:1.2rem;
     padding:30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #414247;
 }
 .cuarto,
@@ -247,7 +245,7 @@
     position: relative;
     margin: auto;
 }
-
+/*seccion sucursales*/
 .container-blog{
    padding: 100px 0;
    text-align: center;
@@ -289,125 +287,967 @@
     font-size:1rem ;
     margin-bottom: 30px;
 }
-
+/*footer*/
 .footer{
-    width: 100%;
     height: 300px;
     background-color: #0a0a0a;
-    color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 }
-.footer div {
-    text-transform: uppercase;
+.footer-container{
+    justify-content: center;
     text-align: center;
-    margin: 50px;
-    margin-bottom: 10px;
 }
-.redes{
-    margin: 20px;
+.nav-contacto{
+    margin: 10px;
 }
+.nav-contacto ul li{
+    color: #ffffff;
+}
+.nav-contacto ul li a{
+    color:#ffffff;
+}
+.nav-contacto ul li a:hover{
+    color:#CE9678;
+}
+
 .redes img{
-    width:50px;
+    width:40px;
 }
-.nav-footer ul li{
-    list-style: circle;
+
+.nav-footer ul li a{
+    color: #ffffff;
     margin: 5px;
 }
 .nav-footer ul li a:hover{    
     color: #CE9678;
 }
-@media(max-width: 320px){
- 
-
+.menu-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
-@media only screen and (max-width: 480px){
-   
+.contacto-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.redes-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+/*PRODUCTOS boostrap*/
+.header-2{
+    background-color:#0a0a0a;
+}
+.header-2 h1{
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.navbar{
+    border-bottom: 1px solid #f9fafc;
+}
+.nav-items a{
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: 700;
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+.nav-items a:hover{
+    color: #c5835f;
+}
 .header{
-    width:100%;
-    height:150vh;
-    min-height: 70vh;
-    background-image: url(../img/blog1.jpg);
-    background-position:center bottom;
+    font-family: 'robot-mono';
+     background-color: #ffffff;
+}
+.pt-6{
+    padding:90px;
+}
+
+.about{
+    background-color: #e7e4e4;
+    border-bottom: 1px solid #ffffff;
+}
+
+button{
+    border:0;
+}
+/*pagina contacto*/
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-texto{
+    background-image: url(/img/cafe.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family:'robot-mono';
-    display: flex;
+    padding:50px;
+    border: 1px solid black;
+}
+.container-texto h1{
+    color: #f9fafc;
+    text-transform: uppercase;
+    border-bottom:1px solid #f9fafc;
+}
+.container-texto h3{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #ffffff;
+}
+.container-texto p{
+    color: #ffffffcc;
+}
+
+.container-form{
+    background-color: #ccc;
+    justify-content: center;
+    border:2px solid black;
+}
+.form{
+    height: 120px;
+    margin-top: 10px;
     align-items: center;
 }
 
-.header2{
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-
-.NavBar ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.NavBar ul li{
-    justify-content: center;
-    margin:15px;
-    list-style: none;
-}
-
-.NavBar ul li a:hover{
-    color:#CE9678 ;
-}
-
-.logo{
-    width:100px;
-    margin: 10px;
-    margin-left: 10px;
-    border: 2px solid white;
-}
-
-a{
-    text-decoration: none;
-    text-transform: uppercase;
+label{
+    display: block;
     font-weight: bold;
-    color: white;
+    margin-bottom: 5px;
+    color:#333;
+}
+input[type='text'],
+textarea,
+input[ type='email']{
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
+.submit,
+.reset{
+    margin-top:40px;
+    background-color: #333;
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
-.intro h1{
-    line-height:80px;
+/*sucursales*/
+.sucursal{
     text-align: center;
-    color: #ffffff;
-    margin-bottom:40px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
 }
-
-.intro p{
-    font-size:1.4rem;
-    padding: 0 250px;
-    margin-bottom: 35px;
-    color: #ffffff;
-    text-align: center;
-}
-
-.boton-inf{
-    display: inline-block;
-    padding:10px 20px;
-    background-color:#CE9678;
-    color: #ffffff;
+.sucursal h2{
     text-transform: uppercase;
-    margin: 0 600px;
+}
+/*servicios*/
+.servicio-img{
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas: 
+    'tarta1 tarta1 tarta4'
+    'tarta2 tarta2 tarta4'
+    'tarta2 tarta2 tarta4'
+    'tarta3 tarta3 tarta3';
+    gap: 20px;
+}
+.texto-tartas{
+    text-align:start;
+}
+.texto-tartas h3{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.tarta{
+    width: 100%;
+    height: 100%;
+}
+.tarta1{
+    grid-area: tarta1;
+}
+.tarta2{
+    grid-area: tarta2;
+}
+.tarta3{
+    grid-area: tarta3;
+}
+.tarta4{
+    grid-area: tarta4;
+}
+.servicio-menu{
+    padding: 30px;
+}
+.servicios-main{
+    padding: 100px;
+    display: flex;
 }
 
-.boton-inf:hover{
-    background-color: #ffffff;
-    color:#d19372 ;
+.menu-cafes{
+    width: 400px;
 }
 
+@media(max-width: 320px){
+    /*heater responcive*/
+ .menu{
+    padding: 30px;
+ }
+ .menu label{
+    display: initial;
+ }
+ .menu .menu-bar{
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+ }
+ .menu .menu-bar ul li{
+    width: 100%;    
+ }
+.menu:checked ~ .menu-bar{
+    display: initial; 
+ }
+
+ .header1{
+    min-height: 25vh;
+ }
+ .intro .Container{
+    padding: 100px 30px;
+ }
+ .intro h1{
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding:0;
+ }
+ .intro p{
+    font-size: 1.3rem;
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 0px;
+ }
+ /*responcive cafes*/
+ .cup-coffe{
+    padding: 30px;
+ }
+ .txtH{
+     padding: 0;
+ }
+ .txtP{
+    padding: 0;
+ }
+ .coffe-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+ }
+ .tipos-de-cafe{
+    padding: 0;
+ }
+.coffe-img{
+    display: none;
+}
+/*responcive servicios*/
+.servicios{
+    padding: 30px;
+}
+.servicios-container p{
+    padding:0;
+}
+.servicios-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.servicio-1{
+    margin-bottom: 20px;
+}
+/*responsive gaaleria info*/
+.info-galeria{
+    margin: 0;
+    padding: 0;
+}
+.info-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-1 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.info-4 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-4 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/*resposive sucursales */
+.container-blog{
+    padding: 30px;
+}
+.blog-grup{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+/*responsive footer*/
+.footer{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.footer-container{
+    font-size: 1.3rem;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+}
+/*sucursales*/
+.sucursal{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.sucursal h4{
+    font-size: 1.4rem;
+}
+.iframe{
+     width: 300px;
+}
+/*contacto*/
+.contacto{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.container-texto{
+    padding: 0;
+}
+.submit,
+.reset{
+    background-color: #333;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-size:1.2rem;
+    margin-bottom: 0;
+}
+
+/*servicios*/
+.servicio-img{
+    padding: 0;
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.tarta1{
+    display: none;
+}
+.servicios-main{
+    padding: 0;
+    flex-direction: column;
+}
+.menu-cafes{
+    margin-top: 5px;
+    align-self: center;
+    width: 200px;
+}
+.servicios-main p h3{
+    padding: 0;
+}
+.texto-tartas{
+    text-align: center;
+}
+}
+@media only screen and (max-width: 480px){
+     /*heater responcive*/
+ .menu{
+    padding: 30px;
+ }
+ .menu label{
+    display: initial;
+ }
+ .menu .menu-bar{
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+ }
+ .menu .menu-bar ul li{
+    width: 100%;    
+ }
+.menu:checked ~ .menu-bar{
+    display: initial; 
+ }
+
+ .header1{
+    min-height: 25vh;
+ }
+ .intro .Container{
+    padding: 100px 30px;
+ }
+ .intro h1{
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding:0;
+ }
+ .intro p{
+    font-size: 1.3rem;
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 0px;
+ }
+ /*responcive cafes*/
+ .cup-coffe{
+    padding: 30px;
+ }
+ .txtH{
+     padding: 0;
+ }
+ .txtP{
+    padding: 0;
+ }
+ .coffe-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+ }
+ .tipos-de-cafe{
+    padding: 0;
+ }
+.coffe-img{
+    display: none;
+}
+/*responcive servicios*/
+.servicios{
+    padding: 30px;
+}
+.servicios-container p{
+    padding:0;
+}
+.servicios-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.servicio-1{
+    margin-bottom: 20px;
+}
+/*responsive gaaleria info*/
+.info-galeria{
+    margin: 0;
+    padding: 0;
+}
+.info-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-1 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.info-4 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-4 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/*resposive sucursales */
+.container-blog{
+    padding: 30px;
+}
+.blog-grup{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+/*responsive footer*/
+.footer{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.footer-container{
+    font-size: 1.3rem;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+}
+/*sucursales*/
+.sucursal{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.sucursal h4{
+    font-size: 1.4rem;
+}
+.iframe{
+     width: 300px;
+}
+/*contacto*/
+.contacto{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.container-texto{
+    padding: 0;
+}
+.submit,
+.reset{
+    background-color: #333;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-size:1.2rem;
+    margin-bottom: 0;
+}
+
+/*servicios*/
+.servicio-img{
+    padding: 0;
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.tarta1{
+    display: none;
+}
+.servicios-main{
+    padding: 0;
+    flex-direction: column;
+}
+.menu-cafes{
+    margin-top: 5px;
+    align-self: center;
+    width: 200px;
+}
+.servicios-main p h3{
+    padding: 0;
+}
+.texto-tartas{
+    text-align: center;
+}
 }
 @media only screen and (max-width: 600px){
+       /*heater responcive*/
+ .menu{
+    padding: 30px;
+ }
+ .menu label{
+    display: initial;
+ }
+ .menu .menu-bar{
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+ }
+ .menu .menu-bar ul li{
+    width: 100%;    
+ }
+.menu:checked ~ .menu-bar{
+    display: initial; 
+ }
 
+ .header1{
+    min-height: 25vh;
+ }
+ .intro .Container{
+    padding: 100px 30px;
+ }
+ .intro h1{
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding:0;
+ }
+ .intro p{
+    font-size: 1.3rem;
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 0px;
+ }
+ /*responcive cafes*/
+ .cup-coffe{
+    padding: 30px;
+ }
+ .txtH{
+     padding: 0;
+ }
+ .txtP{
+    padding: 0;
+ }
+ .coffe-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+ }
+ .tipos-de-cafe{
+    padding: 0;
+ }
+.coffe-img{
+    display: none;
+}
+/*responcive servicios*/
+.servicios{
+    padding: 30px;
+}
+.servicios-container p{
+    padding:0;
+}
+.servicios-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.servicio-1{
+    margin-bottom: 20px;
+}
+/*responsive gaaleria info*/
+.info-galeria{
+    margin: 0;
+    padding: 0;
+}
+.info-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-1 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.info-4 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-4 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/*resposive sucursales */
+.container-blog{
+    padding: 30px;
+}
+.blog-grup{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+/*responsive footer*/
+.footer{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.footer-container{
+    font-size: 1.3rem;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+}
+/*sucursales*/
+.sucursal{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.sucursal h4{
+    font-size: 1.4rem;
+}
+.iframe{
+     width: 300px;
+}
+/*contacto*/
+.contacto{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.container-texto{
+    padding: 0;
+}
+.submit,
+.reset{
+    background-color: #333;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-size:1.2rem;
+    margin-bottom: 0;
+}
+
+/*servicios*/
+.servicio-img{
+    padding: 0;
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.tarta1{
+    display: none;
+}
+.servicios-main{
+    padding: 0;
+    flex-direction: column;
+}
+.menu-cafes{
+    margin-top: 5px;
+    align-self: center;
+    width: 200px;
+}
+.servicios-main p h3{
+    padding: 0;
+}
+.texto-tartas{
+    text-align: center;
+}
+}
+@media only screen and(min-width: 700px){
+       /*heater responcive*/
+ .menu{
+    padding: 30px;
+ }
+ .menu label{
+    display: initial;
+ }
+ .menu .menu-bar{
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+ }
+ .menu .menu-bar ul li{
+    width: 100%;    
+ }
+.menu:checked ~ .menu-bar{
+    display: initial; 
+ }
+
+ .header1{
+    min-height: 25vh;
+ }
+ .intro .Container{
+    padding: 100px 30px;
+ }
+ .intro h1{
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding:0;
+ }
+ .intro p{
+    font-size: 1.3rem;
+    padding:0;
+    margin-top: 0;
+    margin-bottom: 0px;
+ }
+ /*responcive cafes*/
+ .cup-coffe{
+    padding: 30px;
+ }
+ .txtH{
+     padding: 0;
+ }
+ .txtP{
+    padding: 0;
+ }
+ .coffe-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+ }
+ .tipos-de-cafe{
+    padding: 0;
+ }
+.coffe-img{
+    display: none;
+}
+/*responcive servicios*/
+.servicios{
+    padding: 30px;
+}
+.servicios-container p{
+    padding:0;
+}
+.servicios-grup{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.servicio-1{
+    margin-bottom: 20px;
+}
+/*responsive gaaleria info*/
+.info-galeria{
+    margin: 0;
+    padding: 0;
+}
+.info-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-1 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.info-4 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.info-4 p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0;
+}
+/*resposive sucursales */
+.container-blog{
+    padding: 30px;
+}
+.blog-grup{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 0;
+}
+/*responsive footer*/
+.footer{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.footer-container{
+    font-size: 1.3rem;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+}
+/*sucursales*/
+.sucursal{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+.sucursal h4{
+    font-size: 1.4rem;
+}
+.iframe{
+     width: 300px;
+}
+/*contacto*/
+.contacto{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.container-texto{
+    padding: 0;
+}
+.submit,
+.reset{
+    background-color: #333;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-size:1.2rem;
+    margin-bottom: 0;
+}
+
+/*servicios*/
+.servicio-img{
+    padding: 0;
+   display:flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.tarta1{
+    display: none;
+}
+.servicios-main{
+    padding: 0;
+    flex-direction: column;
+}
+.menu-cafes{
+    margin-top: 5px;
+    align-self: center;
+    width: 200px;
+}
+.servicios-main p h3{
+    padding: 0;
+}
+.texto-tartas{
+    text-align: center;
+}
 }
