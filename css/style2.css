@@ -401,7 +401,7 @@ button{
 }
 
 .container-texto{
-    background-image: url(/img/cafe.jpg);
+    background-image: url(../img/cafe.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
