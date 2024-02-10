@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style: none;
     font-family: 'robot-mono';
+    a{
+        text-decoration: none;
+    }
 }
 @font-face {
     font-family:'robot-mono';
@@ -13,6 +16,3 @@
 
 
     
-a{
-    text-decoration: none;
-}
