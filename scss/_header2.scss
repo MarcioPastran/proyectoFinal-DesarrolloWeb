@@ -1,0 +1,38 @@
+.header-2{
+    background-color:#0a0a0a;
+    .navbar{
+        border-bottom: 1px solid #f9fafc;
+    }
+    .nav-items a{
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    a {
+        text-decoration: none;
+    }
+    .nav-items a:hover{
+        color: #c5835f;
+    }
+    .content-logo{
+        width: 100px;
+        margin-top: 5px;
+        
+        .logo{
+            width: 100%;
+            border:2px solid #ffffff;
+        }
+     }
+}
+.header-2 h1{
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
+}
+

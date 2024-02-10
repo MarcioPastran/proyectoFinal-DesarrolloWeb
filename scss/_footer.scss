@@ -1,0 +1,54 @@
+.footer{
+    height: 400px;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;
+}
+.nav-contacto{
+    margin: 10px;
+}
+.nav-contacto ul li{
+    color: #ffffff;
+}
+.nav-contacto ul li a{
+    color:#ffffff;
+
+}
+.nav-contacto ul li a:hover{
+    color:#CE9678;
+}
+
+.redes img{
+    width:40px;
+}
+
+.nav-footer ul li a{
+    color: #ffffff;
+    margin: 5px;
+}
+.nav-footer ul li a:hover{    
+    color: #CE9678;
+}
+.menu-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.contacto-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.redes-footer{
+    text-align:center;
+    color: #ffffff;
+    border-bottom:1px solid white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}

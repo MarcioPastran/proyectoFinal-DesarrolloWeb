@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: space-between;    
 }
-/*le agregue float al la lista para ponerlos uno al lado del otro en vez de display flex */
+
 .menu .menu-bar ul li{
     position: relative;
     float: left;
