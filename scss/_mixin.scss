@@ -1,0 +1,22 @@
+@mixin flex($jcontent,$aling){
+    display: flex;
+    justify-content: $jcontent;
+    align-items: $aling;
+}
+
+
+
+
+.header1{
+   
+    @include flex(space-between,center);
+
+    .menu{
+      
+       @include flex(space-between,center);
+    }
+}
+
+.coffe-grup{
+   @include flex(space-between,center);
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CUP COFFE</title>
 </head>
 
@@ -14,11 +14,15 @@
 
         <div class="menu Container">
             <a href="index.html" class="content-logo"><img class="logo" src="img/cupcoffe.png" alt="logo cupcoffe"></a>
-            <input type="checkbox" name="menu" id="menu-btn">
-            <label for="menu"><img src="img/menu.png" class="menu-icono" alt="menu de hamburgesa"></label>
+            
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu de hamburgesa">
+            </label>
+
             <nav class="menu-bar">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="index.html">Inicio</a></li>
                     <li><a href="html/servicios.html">Servicios</a></li>
                     <li><a href="html/productos.html">Productos</a></li>
                     <li><a href="html/sucursales.html">Sucursale</a></li>
@@ -29,10 +33,10 @@
         <div class="intro Container">
 
             <h1> !Bienvenidos a Cup Coffe¡ </h1>
-            <p> Somos una librería cáfe ubicada en el centro de mendoza frente a la plaza San Martín, podes pasara
+            <p> Somos una librería cáfe ubicada en el centro de mendoza frente a la plaza San Martín, podes pasar a
                 visitarnos leer un buen libro y disfrutar del mejor cáfe. </p>
 
-            <a class="boton-inf primero" href="html/contacto.html">informacion</a>
+            <a class="informacion primero" href="html/contacto.html">informacion</a>
 
         </div>
     </header>
@@ -65,7 +69,7 @@
                 </div>
             </div>
 
-            <a class="boton-inf segundo" href="html/productos.html">informacion</a>
+            <a class="informacion segundo" href="html/productos.html">informacion</a>
         </div>
     </section>
 
@@ -92,7 +96,7 @@
                 Fuga itaque dolor similique enim, corrupti quas consequuntur aperiam? Quam quibusdam dicta officiis
                 accusantium suscipit, facere ratione voluptas fuga assumenda. Illum, error itaque facere earum a vero
                 ratione quibusdam culpa!</p>
-            <a class="boton-inf tercero" href="html/servicios.html">informacion</a>
+            <a class="informacion tercero" href="html/servicios.html">informacion</a>
         </div>
     </main>
 
@@ -101,7 +105,7 @@
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dignissimos eveniet tenetur deleniti
                 illo aperiam.</p>
-            <a class="boton-inf tercero" href="#">informacion</a>
+            <a class="informacion tercero" href="html/productos.html">informacion</a>
         </div>
         <div class="info-2"></div>
     </section>
@@ -111,7 +115,7 @@
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dignissimos eveniet tenetur deleniti
                 illo aperiam.</p>
-            <a class="boton-inf cuarto" href="#">informacion</a>
+            <a class="informacion cuarto" href="html/contacto.html">informacion</a>
         </div>
     </section>
     <section class="container-blog">
@@ -134,12 +138,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt.</p>
             </div>
         </div>
-        <a class="boton-inf tercero" href="html/sucursales.html">informacion</a>
+        <a class="informacion tercero" href="html/sucursales.html">informacion</a>
     </section>
-    <footer class="footer">
-            <nav class="nav-footer">
+    <footer class="pie-de-pagina">
+            <nav class="navegacion-footer">
                 <ul>
-                    <li class="menu-footer">MENU</li>
+                    <li class="navegacion">MENU</li>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="html/servicios.html">Servicios</a></li>
                     <li><a href="html/productos.html">Productos</a></li>
@@ -147,22 +151,22 @@
                     <li><a href="html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            <nav class="nav-contacto">
+            <nav class="navegacion-contacto">
                 <ul>
                     <li class="contacto-footer">contacto</li>
                     <li><a href="#">NUM: 2634 0000 00</a></li>
                     <li><a href="#">NUM-SEC: 2634 0000 00</a></li>
                     <li><a href="#">ejemplo@gmail.com</a></li>
                     <li><a href="#">ejemplo@gmail.com</a></li>
-                    <li>Cup coffe - todos los cerecho reservados</li>
+                    <li>Cup coffe - todos los derecho reservados</li>
                 </ul>
             </nav>
             <div class="redes">
                 <li class="redes-footer">contacto</li>
 
-                <a href="#"><img src="img/facebook-1.png" alt="facebook cup coffe"></a>
+                <a class="iconos" href="#"><img class="img-iconos" src="img/facebook-1.png" alt="facebook cup coffe"></a>
 
-                <a href="#"><img src="img/instagram-2.png" alt="instagram cup coffe"></a>
+                <a class="iconos" href="#"><img class="img-iconos" src="img/instagram-2.png" alt="instagram cup coffe"></a>
             </div>
     </footer>
 

@@ -1,0 +1,134 @@
+.cup-coffe {
+    padding: 100px 0;
+    background-color: #ffffff;
+    position: relative;
+
+    @include media-up(sm) {
+        padding: 30px;
+    }
+    @include media-up(sm2) {
+        padding: 30px;
+    }
+    @include media-up(md) {
+        padding: 30px;
+    }
+    @include media-up(lg) {
+        padding: 30px;
+    }
+
+    .coffe {
+        text-align: center;
+
+        .txtH {
+            font-size: 1.8rem;
+            line-height: 70px;
+            color: #323337;
+            text-transform: uppercase;
+            padding: 0 250px;
+            margin-bottom: 15px;
+
+            @include media-up(sm) {
+                padding: 0;
+            }
+            @include media-up(sm2) {
+                padding: 0;
+            }
+            @include media-up(md) {
+                padding: 0;
+            }
+            @include media-up(lg) {
+                padding: 0;
+            }
+        }
+
+        .txtP {
+            font-size: 1.2rem;
+            color: #414247;
+            padding: 0 250px;
+            margin-bottom: 35px;
+
+            @include media-up(sm) {
+                padding: 0;
+            }
+            @include media-up(sm2) {
+                padding: 0;
+            }
+            @include media-up(md) {
+                padding: 0;
+            }
+            @include media-up(lg) {
+                padding: 0;
+            }
+        }
+
+        .coffe-grup {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+
+            @include media-up(sm) {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+            @include media-up(sm2) {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+            @include media-up(md) {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+
+            .tipos-de-cafe img {
+                width: 200px;
+            }
+
+            .tipos-de-cafe {
+                padding: 0 100px;
+                @include media-up(sm) {
+                    padding: 0;
+                }
+                @include media-up(sm2) {
+                    padding: 0;
+                }
+                @include media-up(md) {
+                    padding: 0;
+                }
+                @include media-up(lg) {
+                    padding:0 40px;
+                }
+    
+            }
+
+            .tipos-de-cafe h3 p {
+                line-height: 10px;
+            }
+
+            .tipos-de-cafe h3 {
+                color: #323337;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .coffe-img {
+        width: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include media-up(sm){
+            display: none;
+        }
+        @include media-up(sm2){
+            display: none;
+        }
+        @include media-up(md){
+            display: none;
+        }
+        @include media-up(lg){
+            display: none;
+        }
+    }
+}

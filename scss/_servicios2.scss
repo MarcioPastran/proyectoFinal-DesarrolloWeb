@@ -1,0 +1,163 @@
+.servicio-img {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+        'tarta1 tarta1 tarta4'
+        'tarta2 tarta2 tarta4'
+        'tarta2 tarta2 tarta4'
+        'tarta3 tarta3 tarta3';
+    gap: 20px;
+
+    @include media-up(sm) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @include media-up(sm2) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @include media-up(md) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @include media-up(lg) {
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .texto-tartas {
+        text-align: start;
+
+        h3 {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid black;
+
+            @include media-up(sm) {
+                border-bottom: none;
+            }
+            @include media-up(sm2) {
+                border-bottom: none;
+            }
+            @include media-up(md) {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .tarta {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tarta1 {
+        grid-area: tarta1;
+
+        @include media-up(sm) {
+            display: none;
+        }
+
+        @include media-up(sm2) {
+            display: none;
+        }
+        @include media-up(md) {
+            display: none;
+        }
+        @include media-up(lg) {
+            display: none;
+        }
+    }
+
+    .tarta2 {
+        grid-area: tarta2;
+    }
+
+    .tarta3 {
+        grid-area: tarta3;
+    }
+
+    .tarta4 {
+        grid-area: tarta4;
+    }
+}
+
+.servicio-menu {
+    padding: 30px;
+}
+
+.servicios-main {
+    padding: 100px;
+    display: flex;
+
+
+    @include media-up(sm) {
+        padding: 0;
+        flex-direction: column;
+
+        p h3 {
+            padding: 0;
+        }
+    }
+
+    @include media-up(sm2) {
+        padding: 0;
+        flex-direction: column;
+
+        p h3 {
+            padding: 0;
+        }
+    }
+        @include media-up(md) {
+            padding: 0;
+            flex-direction: column;
+
+            p h3 {
+                padding: 0;
+            }
+        }
+        @include media-up(lg) {
+            padding: 0;
+            flex-direction: column;
+
+            p h3 {
+                padding: 0;
+            }
+        }
+    }
+
+    .cafes-menu {
+        width: 400px;
+
+        @include media-up(sm) {
+            width: 300px;
+            padding: 10px 10px;
+            align-self: center;
+        }
+
+        @include media-up(sm2) {
+            width: 300px;
+            padding: 10px 10px;
+            align-self: center;
+        }
+        @include media-up(md) {
+            width: 300px;
+            padding: 10px 10px;
+            align-self: center;
+        }
+        @include media-up(lg) {
+            width: 300px;
+            padding: 10px 10px;
+            align-self: center;
+        }
+    }

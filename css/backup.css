@@ -92,7 +92,7 @@
     margin-bottom: 30px;
 }
 
-.boton-inf{
+.informacion{
     display: inline-block;
     padding:10px 20px;
     background-color:#CE9678;
@@ -100,7 +100,7 @@
     text-transform: uppercase;
 }
 
-.boton-inf:hover{
+.informacion:hover{
     background-color: #ffffff;
     color:#d19372 ;
 }
@@ -288,27 +288,24 @@
     margin-bottom: 30px;
 }
 /*footer*/
-.footer{
+.pie-de-pagina{
     height: 300px;
     background-color: #0a0a0a;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
-.footer-container{
-    justify-content: center;
-    text-align: center;
-}
-.nav-contacto{
+
+.navegacion-contacto{
     margin: 10px;
 }
-.nav-contacto ul li{
+.navegacion-contacto ul li{
     color: #ffffff;
 }
-.nav-contacto ul li a{
+.navegacion-contacto ul li a{
     color:#ffffff;
 }
-.nav-contacto ul li a:hover{
+.navegacion-contacto ul li a:hover{
     color:#CE9678;
 }
 
@@ -316,14 +313,14 @@
     width:40px;
 }
 
-.nav-footer ul li a{
+.navegacion-footer ul li a{
     color: #ffffff;
     margin: 5px;
 }
-.nav-footer ul li a:hover{    
+.navegacion-footer ul li a:hover{    
     color: #CE9678;
 }
-.menu-footer{
+.navegacion{
     text-align:center;
     color: #ffffff;
     border-bottom:1px solid white;
@@ -674,6 +671,7 @@ input[ type='email']{
     border-radius: 5px;
     font-size:1.2rem;
     margin-bottom: 0;
+    
 }
 
 /*servicios*/

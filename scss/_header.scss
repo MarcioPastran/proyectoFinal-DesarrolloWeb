@@ -1,15 +1,26 @@
-.header1{
+$colorprincipal:  #f7ae87;
+$colorprincipal2:  #d19372;
+
+.header1 {
     height: 100vh;
     position: relative;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/blog1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blog1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .menu{
+    @include media-up(sm) {
+        min-height: 25vh;
+    }
+    @include media-up(sm2) {
+        min-height: 25vh;
+    }
+    @include media-up(md) {
+        min-height: 25vh;
+    }
+    @include media-up(lg) {
+        min-height: 25vh;
+    }
+    .menu {
         position: absolute;
         top: 0;
         left: 0;
@@ -17,48 +28,235 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .menu-bar ul li{
+        position:fixed;
+        z-index: 100;
+        &:hover{
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,transparent;
+            backdrop-filter: blur(20px);
+            transition: all 0.5s;
+            border-radius: 5px;
+        }
+        @include media-up(sm) {
+            padding: 0px;
+        }
+        @include media-up(sm2) {
+            padding: 30px;
+        }
+        @include media-up(md) {
+            padding: 30px;
+        }
+        @include media-up(lg) {
+            padding: 30px;
+        }
+        
+        .menu-bar {
+            @include media-up(sm) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #323337;
+                display: none;
+            }
+            @include media-up(sm2) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #323337;
+                display: none;
+            }
+            @include media-up(md) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #323337;
+                display: none;
+            }
+            @include media-up(lg) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #323337;
+                display: none;
+            }
+          
+          
+        }
+        .menu-bar ul li {
             position: relative;
             float: left;
             margin: 10px;
             font-weight: 600;
 
+            @include media-up(sm) {
+                width: 100%;
+            }
+            @include media-up(sm2) {
+                width: 100%;
+            }
+            @include media-up(md) {
+                width: 100%;
+            }
+            @include media-up(lg) {
+                padding: 0 80px;
+                width: 100%;
+            }
            
-          
         }
-        .menu-bar ul li a{
+
+        .menu-bar ul li a {
             list-style: none;
             text-transform: uppercase;
             color: #ffffff;
-        } 
-        .menu-bar ul li a:hover{
-            color: #c5835f;
+
+            &:hover {
+                color: $colorprincipal;
+            }
+            &:active{
+                color:$colorprincipal2;
+            }
+           
         }
-        .content-logo{
+
+        .content-logo {
             width: 100px;
             margin-top: 5px;
-            
-            .logo{
-                width: 100%;
-                border:2px solid #ffffff;
+            @include media-up(sm){
+                width: 80px;
             }
-         }
-    }
-    
-    .intro{
-        text-align: center;
-        color:#f9fafc;
-    }
-    .intro h1{
-        font-size: 1.8rem;
-        line-height: 80px;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-     }
+            @include media-up(sm2){
+                width: 80px;
+            }
+            @include media-up(md){
+                width: 80px;
+            }
 
-     .intro p{
-        font-size: 1.5rem;
-        padding:0 250px;
-        margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 100%;
+            border: 2px solid #ffffff;
+        }
+
+        #menu {
+            display: none;
+            @include media-up(sm) {
+                &:checked~.menu-bar {
+                    display: initial;
+                }
+            }
+            @include media-up(sm2) {
+                &:checked~.menu-bar {
+                    display: initial;
+                }
+            }
+            @include media-up(md) {
+                &:checked~.menu-bar {
+                    display: initial;
+                }
+            }
+            @include media-up(lg) {
+                &:checked~.menu-bar {
+                    display: initial;
+                }
+            }
+        }
+
+        .menu-icono {
+            width: 40px;
+        }
+
+        label {
+            display: none;
+            cursor: pointer;
+
+            @include media-up(sm) {
+                display: initial;
+            }
+            @include media-up(sm2) {
+                display: initial;
+            }
+            @include media-up(md) {
+                display: initial;
+            }
+            @include media-up(lg) {
+                display: initial;
+            }
+        }
     }
+
+    .intro {
+        text-align: center;
+
+        @include media-up(sm) {
+            padding: 100px 30px;
+        }
+        @include media-up(sm2) {
+            padding: 100px 30px;
+        }
+        @include media-up(md) {
+            padding: 100px 30px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            line-height: 80px;
+            color: #f9fafc;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+
+            @include media-up(sm) {
+                font-size: 1.3rem;
+                line-height: normal;
+                margin-top: 100px;
+                margin-bottom: 0px;
+                padding: 0;
+            }
+            @include media-up(sm2) {
+                font-size: 1.3rem;
+                line-height: normal;
+                margin-top: 90px;
+                margin-bottom: 0px;
+                padding: 0;
+            }
+            @include media-up(md) {
+                font-size: 1.3rem;
+                line-height: normal;
+                margin-top: 90px;
+                margin-bottom: 0px;
+                padding: 0;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #f9fafc;
+            padding: 0 250px;
+            margin-bottom: 30px;
+
+            @include media-up(sm) {
+                font-size: 1.2rem;
+                padding: 0;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+            @include media-up(sm2) {
+                font-size: 1.2rem;
+                padding: 0;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            @include media-up(md) {
+                font-size: 1.2rem;
+                padding: 0;
+                margin-top: 5px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
 }

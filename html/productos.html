@@ -5,30 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>CUP COFFE</title>
 </head>
 
-<body>
-  <!--PROYECTO boostrap-->
+<body class="body">
+  <!--PROYECTO bootstrap-->
   <header class="header-2">
     <nav class="navbar navbar-expand-md ">
       <div class="container">
         <a class="navbar-brand content-logo" href="../index.html"><img class="logo" src="../img/cupcoffe.png"
             alt="logo cup coffe"></a>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon bg-wiht"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
             <li class="nav-items">
               <a href="../index.html">inicio</a>
-              <a href="servicios.html">servicios</a>
-              <a href="productos.html">productos</a>
-              <a href="sucursales.html">sucursales</a>
-              <a href="contacto.html">contacto</a>
             </li>
+            <li class="nav-items"><a href="servicios.html">servicios</a></li>
+            <li class="nav-items"><a href="productos.html">productos</a></li>
+            <li class="nav-items"><a href="sucursales.html">sucursales</a></li>
+            <li class="nav-items"><a href="contacto.html">contacto</a></li>
           </ul>
         </div>
       </div>
@@ -36,92 +37,220 @@
     </nav>
     <h1>productos</h1>
   </header>
+  <section class="pt-5 hero">
+    <div>
+      <div class="col-md-6 text-white">
+        <div class="text-container p-5 ">
+          <h1 class="display-1 fs-1 fw-600 text-uppercase">Nuestros productos </h1>
+          <p class="lead py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatem nostrum
+            iure quos accusamus illo harum, expedita aspernatur veniam eos deleniti cumque. Fugiat, reprehenderit quam
+          </p>
+          <a class="informacion" href="contacto.html">informacion</a>
+        </div>
+      </div>
+  </section>
+  <h2 class="text-uppercase tw-bold">granos de cafe</h2>
 
-  <section class="header pt-6">
+  <div class="carta contenedor">
+    <img src="../img/granos-cafe-al-reves-bolsa.jpg" alt="granos de cafe">
+    <div>
+      <h2 class="text-uppercase text-darck">cafe en granos de alta calidad</h2>
+      <h3></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id.</p>
+      <a class="informacion" href="contacto.html">informacion</a>
+    </div>
+  </div>
+  <!-- <section class="header pt-6 contenedor">
     <div class="row">
       <div class="col-md-6 text-darck">
         <div class="text-container p-5">
-          <h1 class="display-1 fs-1 fw-600 text-capitalize">cafe en granos <br>
-          de alta calidad </h1>       
-          <p class="lead py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatem nostrum iure quos accusamus illo harum, expedita aspernatur veniam eos deleniti cumque. Fugiat, reprehenderit quam</p>
-          <a class="boton-inf" href="contacto.html">informacion</a>
+          <h1 class="display-1 fs-1 fw-600 text-uppercase">cafe en granos <br>
+            de alta calidad </h1>
+          <p class="lead py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatem nostrum
+            iure quos accusamus illo harum, expedita aspernatur veniam eos deleniti cumque. Fugiat, reprehenderit quam
+          </p>
+          <a class="informacion" href="contacto.html">informacion</a>
         </div>
       </div>
       <div class="col-md-6">
         <div class="image-container px-4">
-          <img src="../img/gr-cafe.png" alt="granos de cafe" class="img-fluid">
+          <img src="../img/gr-cafe.png" alt="granos de cafe" class="img-fluid granos">
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <section class="about py-5 contenedor">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../img/producto1.png" alt="bolsa de granos de caffe" class="img-fluid bolsa-de-cafe">
+        </div>
+        <div class="col-md-6 py-5 ps-5">
+          <p class="lead text-uppercase fw-mediun">
+            <b class="negrita">cafe brasil</b>
+          </p>
+          <h2 class="fw-300 pb-2 text-uppercase">
+            cafe importado de los campos de brasil de muy alta calidad, de cuerpo suabe y de muy baja acidez, si sos
+            amante del cafe no podes perderte este increible cafe.
+          </h2>
+          <a class="informacion" href="contacto.html">comprar</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="about py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="../img/producto1.png" alt="bolsa de granos de caffe" class="img-fluid">
-        </div>
-        <div class="col-md-6 py-5 ps-5">
-          <p class="lead text-uppercase fw-mediun">
-            <b>cafe brasil</b> 
-          </p>
-          <h2 class="fw-300 pb-2 text-uppercase">
-            cafe importado de los campos de brasil de muy alta calidad, de cuerpo suabe y de muy baja acidez, si sos amante del cafe no podes perderte este increible cafe.
-          </h2>
-          <a class="boton-inf" href="contacto.html">informacion</a>
-        </div>
-      </div>
-    </div>   
-  </section>
-  <section class="about py-5">
+  <section class="about py-5 contenedor">
     <div class="container">
       <div class="row">
         <div class="col-md-6 py-5 ps-5">
           <p class="lead text-uppercase fw-mediun">
-            <b>cafe colombia</b> 
+            <b class="negrita">cafe colombia</b>
           </p>
           <h2 class="fw-300 pb-2 text-uppercase">
-           Adentrate en las regiones colombianas con este cafe de cuerpo suave, gusto frutado, aroma floral y una deliciosa acidez.
+            Adentrate en las regiones colombianas con este cafe de cuerpo suave, gusto frutado, aroma floral y una
+            deliciosa acidez.
           </h2>
-          <a class="boton-inf" href="contacto.html">informacion</a>
+          <a class="informacion" href="contacto.html">comprar</a>
         </div>
         <div class="col-md-6">
-          <img src="../img/producto2.png" alt="bolsa de granos de caffe" class="img-fluid">
+          <img src="../img/producto2.png" alt="bolsa de granos de caffe" class="img-fluid bolsa-de-cafe">
         </div>
-       
+
       </div>
-    </div>   
+    </div>
   </section>
-
-
-  <footer class="footer">
-    <nav class="nav-footer">
-        <ul>
-            <li class="menu-footer">MENU</li>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="sucursales.html">Sucursale</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+     <h2 class="text-uppercase tw-bold">podructos</h2>
+  <section class="container">
+    <div class="row py-5">
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-ceramica-blanca.avif" alt="taza blanca" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza blanca - $2.300</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-ceramica-blanca.avif" alt="taza blanca" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza blanca - $2.300</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-ceramica-blanca.avif" alt="taza blanca" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza blanca - $2.300</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row py-5">
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-negra-aislad.avif" alt="taza negra" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza Negra - $2.500</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-negra-aislad.avif" alt="taza negra" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza Negra - $2.500</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-negra-aislad.avif" alt="taza negra" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza Negra - $2.500</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row py-5">
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-cafe-plastico.jpg" alt="taza de plastico" class="card-img-top">          <div class="card-body">
+            <h5 class="card-title">Taza de Plastico - $2.000</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-cafe-plastico.jpg" alt="taza de plastico" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza de Plastico - $2.000</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card">
+          <img src="../img/taza-cafe-plastico.jpg" alt="taza de plastico" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taza de Plastico - $2.000</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reiciendis.</p>
+            <a class="informacion" href="contacto.html">comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="pie-de-pagina">
+    <nav class="navegacion-footer">
+      <ul>
+        <li class="navegacion">MENU</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="html/servicios.html">Servicios</a></li>
+        <li><a href="html/productos.html">Productos</a></li>
+        <li><a href="html/sucursales.html">Sucursale</a></li>
+        <li><a href="html/contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-    <nav class="nav-contacto">
-        <ul>
-            <li class="contacto-footer">contacto</li>
-            <li><a href="#">NUM: 2634 0000 00</a></li>
-            <li><a href="#">NUM-SEC: 2634 0000 00</a></li>
-            <li><a href="#">ejemplo@gmail.com</a></li>
-            <li><a href="#">ejemplo@gmail.com</a></li>
-            <li>Cup coffe - todos los cerecho reservados</li>
-        </ul>
+    <nav class="navegacion-contacto">
+      <ul>
+        <li class="contacto-footer">contacto</li>
+        <li><a href="#">NUM: 2634 0000 00</a></li>
+        <li><a href="#">NUM-SEC: 2634 0000 00</a></li>
+        <li><a href="#">ejemplo@gmail.com</a></li>
+        <li><a href="#">ejemplo@gmail.com</a></li>
+        <li>Cup coffe - todos los derecho reservados</li>
+      </ul>
     </nav>
     <div class="redes">
-        <li class="redes-footer">contacto</li>
+      <li class="redes-footer">redes</li>
 
-        <a href="#"><img src="../img/facebook-1.png" alt="facebook cup coffe"></a>
-     
-          <a href="#"><img src="../img/instagram-2.png" alt="instagram cup coffe"></a>
-      </div>
+      <a class="iconos" href="#"><img class="img-iconos" src="../img/facebook-1.png" alt="facebook cup coffe"></a>
+
+      <a class="iconos" href="#"><img class="img-iconos" src="../img/instagram-2.png" alt="instagram cup coffe"></a>
+    </div>
   </footer>
+
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

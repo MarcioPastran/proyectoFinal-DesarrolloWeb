@@ -1,0 +1,46 @@
+.sucursal{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+    @include media-up(sm){
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom:15px;
+
+        h4{
+            font-size: 1.4rem;
+        }
+        .iframe{
+            width: 300px;
+       }
+    }
+    @include media-up(sm2){
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom:15px;
+
+        h4{
+            font-size: 1.4rem;
+        }
+        .iframe{
+            width: 300px;
+       }
+    }
+    @include media-up(md){
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom:15px;
+
+        h4{
+            font-size: 1.4rem;
+        }
+        .iframe{
+            width: 300px;
+       }
+    }
+}
+.sucursal h2{
+    text-transform: uppercase;
+}

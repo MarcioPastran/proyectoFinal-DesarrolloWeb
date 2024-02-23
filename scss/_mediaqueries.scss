@@ -1,0 +1,14 @@
+$breackpoints:(
+    sm :320px,
+    sm2 :576px,
+    md :768px,
+    lg :992px
+);
+
+@mixin media-up($breackpoint){
+    @media screen and (max-width:map-get($breackpoints,$breackpoint)){
+        @content
+    }
+}
+
+  

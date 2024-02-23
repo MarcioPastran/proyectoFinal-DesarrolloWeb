@@ -1,0 +1,130 @@
+.body{
+    background-image: linear-gradient(to top, #fff, #f3f3f3, #ccc);
+}
+.hero{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/vista-superior-taza-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius:0 0 10px 10px;
+    border-bottom: 2px solid #000;
+    transform: translate(0,-8px);
+}
+.header{
+    font-family: 'robot-mono';
+    background:transparent ;
+    backdrop-filter:blur(15px);
+    margin-bottom: 50px;
+     overflow-x:hidden;
+     .pt-6{
+        padding:60px;
+    }
+
+    @include media-up(sm){
+        border-bottom:none;
+        .granos{
+            display: none;
+        }
+    }
+    @include media-up(sm2){
+        text-align: center;
+        border-bottom:none;
+        .granos{
+            display: none;
+        }
+    }
+    @include media-up(md){
+        text-align: center;
+        .granos{
+            transform: translateY(150px);
+                }
+    }
+}
+
+.tw-bold{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.about{
+    background:linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) ,transparent;
+    margin-top: 10px;
+    border-radius: 24px;
+    max-width: 1000px;
+    .lead{
+        .negrita{
+            border-bottom: 1px solid #000;
+        }
+    }
+    .bolsa-de-cafe{
+       box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+        @include media-up(sm){
+            align-self: center;
+            width: 300px;
+        }
+        @include media-up(sm2){
+            align-self: center;
+            width: 300px;
+        }
+        @include media-up(md){
+            align-self: center;
+            margin-top: 50px;
+        }
+       
+        border-radius: 15px;
+    }
+
+    .pb-2{
+        @include media-up(sm2){
+            padding: 0;
+        }
+    }
+}
+button{
+    border:0;
+}
+.card{
+    transition: all 0.5s;
+    &:hover{
+        transform: scale(1.15);
+        opacity: 7;
+        box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+    }
+}
+.carta{
+    display: flex;
+    align-items:center;
+    width: 75vw;
+    max-width: 1000px;
+    padding:50px 30px 50px 20px;
+    background: #fff;
+    border-radius:24px;
+    img{
+        max-width: 280px;
+        width: 28vw;
+        height: 300px;
+        object-fit: cover;
+        margin-left:-60px;
+        margin-right: 30px;
+        border-radius: inherit;
+        box-shadow:0 60px 40px rgba(0 0 0 /8%);
+        @include media-up(sm){
+            margin: -100px 0 30px 0;
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
+    @include media-up(sm){
+        margin-top: 60px;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+    }
+    
+}
