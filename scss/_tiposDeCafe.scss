@@ -6,9 +6,7 @@
     @include media-up(sm) {
         padding: 30px;
     }
-    @include media-up(sm2) {
-        padding: 30px;
-    }
+   
     @include media-up(md) {
         padding: 30px;
     }
@@ -30,9 +28,7 @@
             @include media-up(sm) {
                 padding: 0;
             }
-            @include media-up(sm2) {
-                padding: 0;
-            }
+           
             @include media-up(md) {
                 padding: 0;
             }
@@ -50,9 +46,7 @@
             @include media-up(sm) {
                 padding: 0;
             }
-            @include media-up(sm2) {
-                padding: 0;
-            }
+          
             @include media-up(md) {
                 padding: 0;
             }
@@ -68,15 +62,12 @@
 
             @include media-up(sm) {
                 flex-direction: column;
-                margin-bottom: 0;
+                margin-bottom: 10px;
             }
-            @include media-up(sm2) {
-                flex-direction: column;
-                margin-bottom: 0;
-            }
+            
             @include media-up(md) {
                 flex-direction: column;
-                margin-bottom: 0;
+                margin-bottom: 10px;
             }
 
             .tipos-de-cafe img {
@@ -88,9 +79,7 @@
                 @include media-up(sm) {
                     padding: 0;
                 }
-                @include media-up(sm2) {
-                    padding: 0;
-                }
+               
                 @include media-up(md) {
                     padding: 0;
                 }
@@ -121,9 +110,7 @@
         @include media-up(sm){
             display: none;
         }
-        @include media-up(sm2){
-            display: none;
-        }
+      
         @include media-up(md){
             display: none;
         }

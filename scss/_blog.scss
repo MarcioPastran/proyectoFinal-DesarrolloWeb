@@ -2,11 +2,10 @@
     padding: 100px 0;
     text-align: center;
     @include media-up(sm) {
+        margin-top: 10px;
         padding: 30px;
     }
-    @include media-up(sm2) {
-        padding: 30px;
-    }
+   
     @include media-up(md) {
         padding: 30px;
     }

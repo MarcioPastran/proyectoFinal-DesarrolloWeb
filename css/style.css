@@ -1,30 +1,27 @@
 .header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header1 .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffe-grup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header1 {
   height: 100vh;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blog1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (max-width: 320px) {
-  .header1 {
-    min-height: 25vh;
-  }
-}
-@media screen and (max-width: 576px) {
-  .header1 {
-    min-height: 25vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header1 {
-    min-height: 25vh;
-  }
-}
-@media screen and (max-width: 992px) {
-  .header1 {
-    min-height: 25vh;
-  }
 }
 .header1 .menu {
   position: absolute;
@@ -34,8 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  z-index: 100;
 }
 .header1 .menu:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), transparent;
@@ -48,11 +43,6 @@
     padding: 0px;
   }
 }
-@media screen and (max-width: 576px) {
-  .header1 .menu {
-    padding: 30px;
-  }
-}
 @media screen and (max-width: 768px) {
   .header1 .menu {
     padding: 30px;
@@ -64,16 +54,6 @@
   }
 }
 @media screen and (max-width: 320px) {
-  .header1 .menu .menu-bar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #323337;
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
   .header1 .menu .menu-bar {
     position: absolute;
     top: 100%;
@@ -330,7 +310,7 @@
 .informacion:hover {
   background-color: #ffffff;
   color: #d19372;
-  transition: all 0.4s;
+  transition: all 0.1s;
 }
 .informacion:active {
   background-color: rgb(221, 221, 221);
@@ -343,11 +323,6 @@
   position: relative;
 }
 @media screen and (max-width: 320px) {
-  .cup-coffe {
-    padding: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
   .cup-coffe {
     padding: 30px;
   }
@@ -378,11 +353,6 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 576px) {
-  .cup-coffe .coffe .txtH {
-    padding: 0;
-  }
-}
 @media screen and (max-width: 768px) {
   .cup-coffe .coffe .txtH {
     padding: 0;
@@ -400,11 +370,6 @@
   margin-bottom: 35px;
 }
 @media screen and (max-width: 320px) {
-  .cup-coffe .coffe .txtP {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 576px) {
   .cup-coffe .coffe .txtP {
     padding: 0;
   }
@@ -427,19 +392,13 @@
 @media screen and (max-width: 320px) {
   .cup-coffe .coffe .coffe-grup {
     flex-direction: column;
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .cup-coffe .coffe .coffe-grup {
-    flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 768px) {
   .cup-coffe .coffe .coffe-grup {
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 .cup-coffe .coffe .coffe-grup .tipos-de-cafe img {
@@ -449,11 +408,6 @@
   padding: 0 100px;
 }
 @media screen and (max-width: 320px) {
-  .cup-coffe .coffe .coffe-grup .tipos-de-cafe {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 576px) {
   .cup-coffe .coffe .coffe-grup .tipos-de-cafe {
     padding: 0;
   }
@@ -483,11 +437,6 @@
   right: 0;
 }
 @media screen and (max-width: 320px) {
-  .cup-coffe .coffe-img {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
   .cup-coffe .coffe-img {
     display: none;
   }
@@ -602,12 +551,16 @@
 }
 @media screen and (max-width: 320px) {
   .info-galeria {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
   }
 }
 @media screen and (max-width: 576px) {
   .info-galeria {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
   }
@@ -624,16 +577,52 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 576px) {
+  .info-galeria .info-2 {
+    display: none;
+  }
+}
 .info-galeria .info-3 {
   background-image: url(../img/coffee-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 576px) {
+  .info-galeria .info-3 {
+    display: none;
+  }
+}
 .info-galeria .info-4,
 .info-galeria .info-1 {
   text-align: center;
   background-color: #ffffff;
+}
+@media screen and (max-width: 320px) {
+  .info-galeria .info-4,
+  .info-galeria .info-1 {
+    padding: 5px;
+    margin: 20px;
+    border-radius: 24px;
+  }
+  .info-galeria .info-4:hover,
+  .info-galeria .info-1:hover {
+    transition: all 1s;
+    box-shadow: 20px 40px 20px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+@media screen and (max-width: 576px) {
+  .info-galeria .info-4,
+  .info-galeria .info-1 {
+    padding: 5px;
+    margin: 20px;
+    border-radius: 24px;
+  }
+  .info-galeria .info-4:hover,
+  .info-galeria .info-1:hover {
+    transition: all 1s;
+    box-shadow: 20px 40px 20px 20px rgba(0, 0, 0, 0.08);
+  }
 }
 .info-galeria .info-4 h2,
 .info-galeria .info-1 h2 {
@@ -644,14 +633,6 @@
   color: #323337;
 }
 @media screen and (max-width: 320px) {
-  .info-galeria .info-4 h2,
-  .info-galeria .info-1 h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 576px) {
   .info-galeria .info-4 h2,
   .info-galeria .info-1 h2 {
     margin-top: 20px;
@@ -674,14 +655,6 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 576px) {
-  .info-galeria .info-4 p,
-  .info-galeria .info-1 p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-}
 
 .container-blog {
   padding: 100px 0;
@@ -689,11 +662,7 @@
 }
 @media screen and (max-width: 320px) {
   .container-blog {
-    padding: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container-blog {
+    margin-top: 10px;
     padding: 30px;
   }
 }
@@ -786,6 +755,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
+  border-top: 1px solid #fff;
+}
+.pie-de-pagina ul, .pie-de-pagina ol {
+  padding: 0;
 }
 @media screen and (max-width: 320px) {
   .pie-de-pagina {
@@ -914,6 +888,7 @@
   text-transform: uppercase;
 }
 .pie-de-pagina .redes .redes-footer {
+  font-weight: 200;
   text-align: center;
   color: #ffffff;
   border-bottom: 1px solid white;
@@ -926,12 +901,19 @@
 }
 .pie-de-pagina .redes .iconos .img-iconos:hover {
   margin-top: 10px;
+  margin-bottom: 10px;
   filter: none;
   transform: scale(1.4);
   transition: all 0.3s;
 }
 .pie-de-pagina .redes .iconos .img-iconos:active {
   filter: saturate(6);
+}
+.pie-de-pagina .derechos {
+  position: relative;
+  color: #414040;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .header-2 {
@@ -976,7 +958,7 @@ a {
 }
 
 .servicio-img {
-  padding: 60px;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(4, 200px);
@@ -1015,28 +997,19 @@ a {
     gap: 10px;
   }
 }
+@media screen and (max-width: 1025px) {
+  .servicio-img {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 100px);
+  }
+}
 .servicio-img .texto-tartas {
   text-align: start;
 }
-.servicio-img .texto-tartas h3 {
+.servicio-img .texto-tartas h2 {
   font-size: 1.6rem;
   text-transform: uppercase;
   border-bottom: 1px solid black;
-}
-@media screen and (max-width: 320px) {
-  .servicio-img .texto-tartas h3 {
-    border-bottom: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  .servicio-img .texto-tartas h3 {
-    border-bottom: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .servicio-img .texto-tartas h3 {
-    border-bottom: none;
-  }
 }
 .servicio-img .tarta {
   width: 100%;
@@ -1046,11 +1019,6 @@ a {
   grid-area: tarta1;
 }
 @media screen and (max-width: 320px) {
-  .servicio-img .tarta1 {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
   .servicio-img .tarta1 {
     display: none;
   }
@@ -1130,13 +1098,6 @@ a {
     align-self: center;
   }
 }
-@media screen and (max-width: 576px) {
-  .cafes-menu {
-    width: 300px;
-    padding: 10px 10px;
-    align-self: center;
-  }
-}
 @media screen and (max-width: 768px) {
   .cafes-menu {
     width: 300px;
@@ -1152,8 +1113,71 @@ a {
   }
 }
 
+.container-menus {
+  padding: 100px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 320px) {
+  .container-menus {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-menus {
+    padding: 0;
+  }
+}
+.container-menus .menus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 320px) {
+  .container-menus .menus {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-menus .menus {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container-menus .menus {
+    flex-direction: column;
+  }
+}
+.container-menus .menus img {
+  width: 350px;
+}
+@media screen and (max-width: 320px) {
+  .container-menus .menus img {
+    width: 300px;
+  }
+}
+.container-menus .menus img:hover {
+  transform: scale(1.5);
+  transition: all 2s;
+  box-shadow: 0 60px 40px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 320px) {
+  .container-menus .menus img:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-menus .menus img:hover {
+    transform: scale(1.4);
+  }
+}
+
 .body {
   background-image: linear-gradient(to top, #fff, #f3f3f3, #ccc);
+  overflow-x: hidden;
 }
 
 .hero {
@@ -1230,12 +1254,6 @@ a {
     width: 300px;
   }
 }
-@media screen and (max-width: 576px) {
-  .about .bolsa-de-cafe {
-    align-self: center;
-    width: 300px;
-  }
-}
 @media screen and (max-width: 768px) {
   .about .bolsa-de-cafe {
     align-self: center;
@@ -1299,114 +1317,94 @@ button {
 }
 
 .contacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 100px;
-  column-gap: 5px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+.contacto .contenedor-contacto {
+  background-color: #ccc;
+  display: flex;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
 }
 @media screen and (max-width: 320px) {
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    top: 0;
+  .contacto .contenedor-contacto {
+    flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 576px) {
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    top: 0;
+@media screen and (max-width: 768px) {
+  .contacto .contenedor-contacto {
+    flex-direction: column-reverse;
   }
 }
-.contacto .container-texto {
+.contacto .contenedor-contacto .container-texto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/cafe.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
+  text-align: center;
   padding: 70px;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
 }
 @media screen and (max-width: 320px) {
-  .contacto .container-texto {
+  .contacto .contenedor-contacto .container-texto {
     margin-bottom: 5px;
     padding: 0;
   }
 }
 @media screen and (max-width: 576px) {
-  .contacto .container-texto {
-    margin-bottom: 5px;
+  .contacto .contenedor-contacto .container-texto {
     padding: 0;
   }
 }
-.contacto .container-texto h3 {
+.contacto .contenedor-contacto .container-texto h3 {
   text-transform: uppercase;
   font-size: 1.7rem;
   color: #ffffff;
 }
 @media screen and (max-width: 320px) {
-  .contacto .container-texto h3 {
-    font-size: 1.2rem;
+  .contacto .contenedor-contacto .container-texto h3 {
+    font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 576px) {
-  .contacto .container-texto h3 {
-    font-size: 1.2rem;
-  }
-}
-.contacto .container-texto p {
+.contacto .contenedor-contacto .container-texto p {
   color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 320px) {
-  .contacto .container-texto p {
+  .contacto .contenedor-contacto .container-texto p {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 576px) {
-  .contacto .container-texto p {
-    font-size: 1rem;
-  }
-}
-.contacto .container-form {
-  background-color: #ccc;
+.contacto .contenedor-contacto .container-form {
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 10px;
+  align-items: center;
+  padding: 60px;
+  margin: 50px;
 }
 @media screen and (max-width: 320px) {
-  .contacto .container-form {
+  .contacto .contenedor-contacto .container-form {
     width: 100%;
-    margin-bottom: 5px;
+    padding: 15px;
+    margin: 0;
   }
 }
-@media screen and (max-width: 576px) {
-  .contacto .container-form {
+@media screen and (max-width: 768px) {
+  .contacto .contenedor-contacto .container-form {
     width: 100%;
-    margin-bottom: 5px;
+    margin: 0;
   }
 }
-.contacto .container-form .form {
-  height: 120px;
-  margin-top: 10px;
-  align-items: center;
-}
-.contacto .container-form label {
+.contacto .contenedor-contacto .container-form label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
 }
-.contacto .container-form input[type=text],
-.contacto .container-form textarea,
-.contacto .container-form input[type=email] {
+.contacto .contenedor-contacto .container-form input[type=text],
+.contacto .contenedor-contacto .container-form textarea,
+.contacto .contenedor-contacto .container-form input[type=email] {
   justify-content: center;
   padding: 10px;
   border: 2px solid #fff;
@@ -1414,8 +1412,15 @@ button {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.contacto .container-form .submit,
-.contacto .container-form .reset {
+@media screen and (max-width: 768px) {
+  .contacto .contenedor-contacto .container-form input[type=text],
+  .contacto .contenedor-contacto .container-form textarea,
+  .contacto .contenedor-contacto .container-form input[type=email] {
+    width: 100%;
+  }
+}
+.contacto .contenedor-contacto .container-form .submit,
+.contacto .contenedor-contacto .container-form .reset {
   margin-top: 20px;
   background-color: #333;
   color: #fff;
@@ -1424,31 +1429,20 @@ button {
   border-radius: 5px;
   font-size: 18px;
 }
-.contacto .container-form .submit:hover,
-.contacto .container-form .reset:hover {
+.contacto .contenedor-contacto .container-form .submit:hover,
+.contacto .contenedor-contacto .container-form .reset:hover {
   background-color: #fff;
   color: #333;
   transition: all 0.4s;
 }
-.contacto .container-form .submit:active,
-.contacto .container-form .reset:active {
+.contacto .contenedor-contacto .container-form .submit:active,
+.contacto .contenedor-contacto .container-form .reset:active {
   background-color: #5f5f5f;
   color: #fff;
 }
 @media screen and (max-width: 320px) {
-  .contacto .container-form .submit,
-  .contacto .container-form .reset {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .contacto .container-form .submit,
-  .contacto .container-form .reset {
+  .contacto .contenedor-contacto .container-form .submit,
+  .contacto .contenedor-contacto .container-form .reset {
     background-color: #333;
     color: #fff;
     border: none;
@@ -1464,6 +1458,21 @@ button {
   align-items: center;
   margin: 40px;
 }
+.sucursal .dropdown {
+  text-align: center;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  color: #fff;
+}
+@media screen and (max-width: 320px) {
+  .sucursal .dropdown {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 320px) {
   .sucursal {
     margin: 0;
@@ -1483,7 +1492,7 @@ button {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .sucursal h4 {
+  .sucursal h3 {
     font-size: 1.4rem;
   }
   .sucursal .iframe {
@@ -1496,7 +1505,7 @@ button {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .sucursal h4 {
+  .sucursal h3 {
     font-size: 1.4rem;
   }
   .sucursal .iframe {
@@ -1506,23 +1515,6 @@ button {
 
 .sucursal h2 {
   text-transform: uppercase;
-}
-
-.header1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header1 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.coffe-grup {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,3 @@
-$colorprincipal:  #f7ae87;
-$colorprincipal2:  #d19372;
-
 .informacion{
     display: inline-block;
     padding:10px 20px;
@@ -11,7 +8,7 @@ $colorprincipal2:  #d19372;
     &:hover{
         background-color: #ffffff;
         color:$colorprincipal2;
-        transition: all 0.4s;
+        transition:all 0.10s;
     }
     &:active{
         background-color: rgb(221, 221, 221);

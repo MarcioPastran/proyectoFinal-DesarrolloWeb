@@ -1,5 +1,5 @@
 .servicio-img {
-    padding: 60px;
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(4, 200px);
@@ -23,36 +23,33 @@
         flex-direction: column;
         gap: 10px;
     }
+
     @include media-up(md) {
         padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
     @include media-up(lg) {
-        padding:10px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
+    @include media-up(lg2) {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 100px);
+    }
+
     .texto-tartas {
         text-align: start;
 
-        h3 {
+        h2 {
             font-size: 1.6rem;
             text-transform: uppercase;
             border-bottom: 1px solid black;
-
-            @include media-up(sm) {
-                border-bottom: none;
-            }
-            @include media-up(sm2) {
-                border-bottom: none;
-            }
-            @include media-up(md) {
-                border-bottom: none;
-            }
         }
     }
 
@@ -68,12 +65,10 @@
             display: none;
         }
 
-        @include media-up(sm2) {
-            display: none;
-        }
         @include media-up(md) {
             display: none;
         }
+
         @include media-up(lg) {
             display: none;
         }
@@ -118,46 +113,102 @@
             padding: 0;
         }
     }
-        @include media-up(md) {
-            padding: 0;
-            flex-direction: column;
 
-            p h3 {
-                padding: 0;
-            }
-        }
-        @include media-up(lg) {
-            padding: 0;
-            flex-direction: column;
+    @include media-up(md) {
+        padding: 0;
+        flex-direction: column;
 
-            p h3 {
-                padding: 0;
-            }
+        p h3 {
+            padding: 0;
         }
     }
 
-    .cafes-menu {
-        width: 400px;
+    @include media-up(lg) {
+        padding: 0;
+        flex-direction: column;
+
+        p h3 {
+            padding: 0;
+        }
+    }
+}
+
+.cafes-menu {
+    width: 400px;
+
+    @include media-up(sm) {
+        width: 300px;
+        padding: 10px 10px;
+        align-self: center;
+    }
+
+    @include media-up(md) {
+        width: 300px;
+        padding: 10px 10px;
+        align-self: center;
+    }
+
+    @include media-up(lg) {
+        width: 300px;
+        padding: 10px 10px;
+        align-self: center;
+    }
+}
+
+.container-menus {
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @include media-up(sm) {
+        padding: 0;
+    }
+
+    @include media-up(sm2) {
+        padding: 0;
+    }
+
+    .menus {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
 
         @include media-up(sm) {
-            width: 300px;
-            padding: 10px 10px;
-            align-self: center;
+            flex-direction: column;
         }
 
         @include media-up(sm2) {
-            width: 300px;
-            padding: 10px 10px;
-            align-self: center;
+            flex-direction: column;
         }
-        @include media-up(md) {
-            width: 300px;
-            padding: 10px 10px;
-            align-self: center;
+
+        @include media-up(lg2) {
+            flex-direction: column;
         }
-        @include media-up(lg) {
-            width: 300px;
-            padding: 10px 10px;
-            align-self: center;
+
+        & img {
+            width: 350px;
+
+            @include media-up(sm) {
+                width: 300px;
+            }
+
+            &:hover {
+                transform: scale(1.5);
+                transition: all 2s;
+                box-shadow: 0 60px 40px rgb(0 0 0 / 10%);
+
+                @include media-up(sm) {
+                    transform: scale(1.0);
+                }
+
+                @include media-up(sm2) {
+                    transform: scale(1.4);
+                }
+
+            }
         }
     }
+}

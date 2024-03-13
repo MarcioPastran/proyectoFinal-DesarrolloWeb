@@ -1,5 +1,6 @@
 .body{
     background-image: linear-gradient(to top, #fff, #f3f3f3, #ccc);
+    overflow-x: hidden;
 }
 .hero{
     min-height: 100vh;
@@ -66,10 +67,7 @@
             align-self: center;
             width: 300px;
         }
-        @include media-up(sm2){
-            align-self: center;
-            width: 300px;
-        }
+     
         @include media-up(md){
             align-self: center;
             margin-top: 50px;
