@@ -17,7 +17,7 @@ Clona el repositorio:
 
 bash
 Copiar código
-git clone https://github.com/tu-usuario/cafeteria-online.git
+git clone https://github.com/MarcioPastran/proyectoFinal-DesarrolloWeb
 Navega al directorio del proyecto:
 
 bash
