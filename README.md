@@ -1,4 +1,4 @@
-Cafetería Online - Proyecto Final de Desarrollo Web
+☕ Cafetería Online - Proyecto Final de Desarrollo Web
 Bienvenido al proyecto de Cafetería Online, una aplicación web que permite a los usuarios explorar productos, reservar menús y reservar lugares en nuestra cafetería real. Este proyecto ha sido desarrollado como el proyecto final de un curso de desarrollo web y utiliza tecnologías como HTML, CSS, SASS y Bootstrap para crear una experiencia de usuario moderna y funcional.
 
 Descripción del Proyecto
@@ -57,5 +57,5 @@ Contacto
 Para cualquier consulta o comentario, por favor contacta a:
 
 Nombre: [Marcio Pastran]
-Correo electrónico: [rosspastrangarcia@gmail.com]
-GitHub: https://github.com/MarcioPastran
+📧  Correo electrónico: [rosspastrangarcia@gmail.com]
+🐙 GitHub: https://github.com/MarcioPastran
